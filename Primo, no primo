@@ -1,0 +1,29 @@
+/* Programa: Numero es primo o no es primo */
+#include <stdio.h>
+#include <stdbool.h>
+int main()
+{
+    int num;
+    printf("Ingresa un numero:\n");
+    scanf("%d",&num);
+    int div;
+    bool sino;
+    if (num <= 1) {
+        printf("\nNo es primo\n");
+    } else {
+        for (int i = 2; i <= num / 2; i++) {
+            div = num % i;
+            if (div == 0) {
+                sino = 0;
+            } else {
+                sino = 1;
+            }
+        }
+        if (sino == 0) {
+            printf("No es primo");
+        } else {
+            printf("Es primo");
+        }
+    }
+    return 0;
+}
