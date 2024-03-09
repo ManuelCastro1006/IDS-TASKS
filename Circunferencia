@@ -1,0 +1,20 @@
+#include <conio.h>
+#include <stdio.h>
+int main ()
+{
+    float area, radio;
+    const float PI = 3.1416;
+
+    printf("\n Introduzca radio: ");
+    scanf("%f", &radio );
+
+    area = PI * radio *radio;
+
+    printf("\n El %crea de la circunferencia es %.2f", 160, area );
+
+    printf("\n\n Presione cualquier tecla para sair...");
+
+    getch();/*pausa*/
+
+    return 0;
+}
