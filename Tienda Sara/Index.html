@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <!--barra de navegacion-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="img/Logo.png" alt="Logo" width="50" height="50" class="me-2">
+      Tienda Sara
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"> 
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Ofertas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Liquidaciones</a>
+        </li>
+      </ul>
+
+      <!-- Contenedor derecho -->
+      <div class="d-flex align-items-center">
+
+        <form class="d-flex me-3">
+          <input class="form-control me-2" type="search" placeholder="Buscar">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+
+        <!-- Botón carrito -->
+        <button class="btn btn-outline-dark position-relative">
+          🛒
+          <!--(notificacion del carrito, experimental) <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            3
+          </span>-->
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+</nav>
+        <!--carrusel-->
+        <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="img/car1.jpg" height="700" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Liquidacion!!!</h5>
+                <p>En articulos seleccionados</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="img/car2.jpg" height="700" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Nueva temporada de ropa</h5>
+                <p>No te pierdas la nueva linea de temporada de primavera</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="img/car3.jpg" height="700" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Visita nuestra nueva sucursal</h5>
+                <p>Nueva sucursal en Galeria Periferico</p>
+            </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+        <div class="container text-center" style="margin-top: 100px;"></div>
+        <!--Productos (tenia que cambiarle el nombre a los productor pero por temas de tiempo se me olvido cambiarselos)-->
+        <div class="container text-center">
+            <div class="row align-items-start">
+
+                <div class="container my-5">
+                <h2 class="text-center mb-4">Productos Destacados</h2>
+
+                    <div class="row g-4">
+
+                        <!-- Producto 1 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art1.jpg" class="card-img-top" height="400"alt="Producto 1">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 1</h5>
+                            <p class="card-text">$1,299.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Producto 2 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art2.jpg" class="card-img-top"  height="400" alt="Producto 2">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 2</h5>
+                            <p class="card-text">$899.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Producto 3 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art3.jpg" class="card-img-top" height="400"  alt="Producto 3">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 3</h5>
+                            <p class="card-text">$2,499.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Producto 4 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art4.jpg" class="card-img-top"  height="400" alt="Producto 4">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 4</h5>
+                            <p class="card-text">$599.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center">
+            <div class="row align-items-start">
+
+                <div class="container my-5">
+
+                    <div class="row g-4">
+
+                        <!-- Producto 5 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art5.jpg" class="card-img-top"  height="400" alt="Producto 1">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 1</h5>
+                            <p class="card-text">$1,299.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Producto 6 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art6.jpg" class="card-img-top" height="400" alt="Producto 2">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 2</h5>
+                            <p class="card-text">$899.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Producto 7 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art7.jpg" class="card-img-top" height="400" alt="Producto 3">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 3</h5>
+                            <p class="card-text">$2,499.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Producto 8 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art8.jpg" class="card-img-top" height="400" alt="Producto 4">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 4</h5>
+                            <p class="card-text">$599.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center">
+            <div class="row align-items-start">
+
+                <div class="container my-5">
+
+                    <div class="row g-4">
+
+                        <!-- Producto 9 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art9.jpg" class="card-img-top" height="400" alt="Producto 1">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 1</h5>
+                            <p class="card-text">$1,299.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Producto 10 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art10.jpg" class="card-img-top" height="400" alt="Producto 2">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 2</h5>
+                            <p class="card-text">$899.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Producto 11 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art11.jpg" class="card-img-top" height="400" alt="Producto 3">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 3</h5>
+                            <p class="card-text">$2,499.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Producto 12 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art12.jpg" class="card-img-top" height="400" alt="Producto 4">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 4</h5>
+                            <p class="card-text">$599.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center">
+            <div class="row align-items-start">
+
+                <div class="container my-5">
+
+                    <div class="row g-4">
+
+                        <!-- Producto 13 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art13.jpg" class="card-img-top" height="400" alt="Producto 1">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 1</h5>
+                            <p class="card-text">$1,299.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Producto 14 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art14.jpg" class="card-img-top" height="400" alt="Producto 2">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 2</h5>
+                            <p class="card-text">$899.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Producto 15 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art15.jpg" class="card-img-top" height="400" alt="Producto 3">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 3</h5>
+                            <p class="card-text">$2,499.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- Producto 16 -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/art16.jpg" class="card-img-top" height="400" alt="Producto 4">
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Producto 4</h5>
+                            <p class="card-text">$599.00</p>
+                            <button class="btn btn-primary w-100">Agregar al carrito</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+<!--pagina...eso pa cambiarlas pues-->
+                <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+            </nav>
+<!--Columnas-->
+                <div class="col"><!-- col1 -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/col1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Testiomonio de un gran cliente</strong></h5>
+                            <p class="card-text">“En Tienda Sara siempre encuentro lo que necesito en un solo lugar. La variedad es excelente y el personal es muy atento. Sin duda se ha convertido en mi primera opción para comprar.”</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col"><!-- col2 -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/col2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Testimonio de una clienta distinguida</strong></h5>
+                            <p class="card-text">“Me sorprendió la calidad de los productos y los precios competitivos. Además, el proceso de compra fue rápido y organizado. Es una experiencia que realmente marca la diferencia.”</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col"><!-- col3 -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/col3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Testimonio de un cliente frecuente</strong></h5>
+                            <p class="card-text">“La atención al cliente es impecable. Desde que entré a la tienda me sentí bien asesorado y encontré justo lo que buscaba. Recomiendo Tienda Sara por su profesionalismo y confianza.”</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container text-center" style="margin-top: 100px;"></div>
+        <!--acordeon de mision y todo eso--->
+        <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <strong>Mision</strong>
+            </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Ofrecer a nuestros clientes una experiencia de compra integral, accesible y confiable, mediante un amplio portafolio de productos de calidad en distintas categorías, respaldado por un servicio eficiente y una atención centrada en la satisfacción del cliente.
+            </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <strong>Vision</strong>
+            </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Consolidarnos como una tienda departamental referente en el mercado, reconocida por su innovación, competitividad y compromiso con la excelencia operativa, generando valor sostenible para clientes, colaboradores y socios comerciales.
+            </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <strong>Propuesta de valor</strong>
+            </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Brindamos variedad, conveniencia y precios competitivos en un solo lugar, combinando calidad, disponibilidad de inventario y una experiencia de compra moderna tanto en tienda física como en canales digitales. Si lo deseas, puedo adaptarlo a un enfoque más tecnológico, más orientado a retail estratégico o más enfocado en expansión empresarial.
+            </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                <strong>Quienes somos</strong>
+            </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Tienda Sara es una tienda departamental dedicada a ofrecer una amplia variedad de productos para el hogar y la vida diaria, combinando calidad, precios competitivos y un servicio enfocado en la satisfacción del cliente. Trabajamos con compromiso, eficiencia y orientación a la mejora continua para brindar una experiencia de compra confiable y accesible.           </div>
+            </div>
+        </div>
+        </div>
+<div class="container text-center" style="margin-top: 20px;"></div>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary">Facebook</button>
+            <button type="button" class="btn btn-outline-primary">Instagram</button>
+            <button type="button" class="btn btn-outline-primary">Tiktok</button>
+            <button type="button" class="btn btn-outline-primary">Marcas</button>
+            <button type="button" class="btn btn-outline-primary">Contactenos</button>
+            <button type="button" class="btn btn-outline-primary">Aviso de privacidad</button>
+        </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
