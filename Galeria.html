@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería de Productos - Tienda Sara</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <!--barra de navegacion-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="img/Logo.png" alt="Logo" width="50" height="50" class="me-2">
+      Tienda Sara
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"> 
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Ofertas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Liquidaciones</a>
+        </li>
+      </ul>
+
+      <!-- Contenedor derecho -->
+      <div class="d-flex align-items-center">
+
+        <form class="d-flex me-3">
+          <input class="form-control me-2" type="search" placeholder="Buscar">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+
+        <!-- Botón carrito -->
+        <button class="btn btn-outline-dark position-relative">
+          🛒
+          <!--(notificacion del carrito, experimental) <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            3
+          </span>-->
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+</nav>
+<div class="container my-5">
+
+  <div class="row">
+
+    <!--sidebar-->
+    <div class="col-lg-3 mb-4">
+
+      <h5>Filtros</h5>
+      <hr>
+
+      <div class="mb-3">
+        <label class="form-label"><strong>Categoría</strong></label>
+        <select class="form-select">
+          <option>Todas</option>
+          <option>Electrónica</option>
+          <option>Ropa</option>
+          <option>Muebles</option>
+          <option>Hogar</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label"><strong>Marca</strong></label>
+        <select class="form-select">
+          <option>Todas</option>
+          <option>Samsung</option>
+          <option>Nike</option>
+          <option>LG</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label"><strong>Precio máximo</strong></label>
+        <input type="range" class="form-range">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label"><strong>Color</strong></label>
+        <select class="form-select">
+          <option>Todos</option>
+          <option>Negro</option>
+          <option>Blanco</option>
+          <option>Azul</option>
+        </select>
+      </div>
+
+      <button class="btn btn-primary w-100">Aplicar filtros</button>
+
+    </div>
+
+<!--productos-->
+    <div class="col-lg-9">
+
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4>Galería de Productos</h4>
+        <select class="form-select w-auto">
+          <option>Ordenar por relevancia</option>
+          <option>Precio menor a mayor</option>
+          <option>Precio mayor a menor</option>
+          <option>Popularidad</option>
+        </select>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- articulo -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm position-relative">
+
+            <!-- Etiqueta -->
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">
+              Descuento
+            </span>
+
+            <img src="img/art1.jpg" class="card-img-top" height="300">
+            <div class="card-body text-center">
+              <h6 class="card-title">Audifonos</h6>
+              <p class="card-text text-success fw-bold">$7,999.00</p> <!--no me fije mucho en los precios la verdad-->
+              <button class="btn btn-outline-primary w-100">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm position-relative">
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+              Nuevo
+            </span>
+            <img src="img/art2.jpg" class="card-img-top" height="300">
+            <div class="card-body text-center">
+              <h6 class="card-title">Camara</h6>
+              <p class="card-text text-success fw-bold">$1,299.00</p>
+              <button class="btn btn-outline-primary w-100">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm position-relative">
+            <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-2">
+              Popular
+            </span>
+            <img src="img/art3.jpg" class="card-img-top" height="300">
+            <div class="card-body text-center">
+              <h6 class="card-title">Tenis</h6>
+              <p class="card-text text-success fw-bold">$12,499.00</p>
+              <button class="btn btn-outline-primary w-100">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+   <div class="row g-4">
+
+        <!-- articulo -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm position-relative">
+
+            <!-- Etiqueta -->
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">
+              Descuento
+            </span>
+
+            <img src="img/art4.jpg" class="card-img-top" height="300">
+            <div class="card-body text-center">
+              <h6 class="card-title">espatula</h6>
+              <p class="card-text text-success fw-bold">$7,999.00</p>
+              <button class="btn btn-outline-primary w-100">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm position-relative">
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+              Nuevo
+            </span>
+            <img src="img/art5.jpg" class="card-img-top" height="300">
+            <div class="card-body text-center">
+              <h6 class="card-title">Smart TV 50"</h6>
+              <p class="card-text text-success fw-bold">$1,299.00</p>
+              <button class="btn btn-outline-primary w-100">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm position-relative">
+            <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-2">
+              Popular
+            </span>
+            <img src="img/art6.jpg" class="card-img-top" height="300">
+            <div class="card-body text-center">
+              <h6 class="card-title">Laptop</h6>
+              <p class="card-text text-success fw-bold">$12,499.00</p>
+              <button class="btn btn-outline-primary w-100">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+   <div class="row g-4">
+
+        <!-- articulo -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm position-relative">
+
+            <!-- Etiqueta -->
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">
+              Descuento
+            </span>
+
+            <img src="img/art7.jpg" class="card-img-top" height="300">
+            <div class="card-body text-center">
+              <h6 class="card-title">Refrigerador</h6>
+              <p class="card-text text-success fw-bold">$7,999.00</p>
+              <button class="btn btn-outline-primary w-100">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm position-relative">
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+              Nuevo
+            </span>
+            <img src="img/art8.jpg" class="card-img-top" height="300">
+            <div class="card-body text-center">
+              <h6 class="card-title">Estufa</h6>
+              <p class="card-text text-success fw-bold">$1,299.00</p>
+              <button class="btn btn-outline-primary w-100">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm position-relative">
+            <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-2">
+              Popular
+            </span>
+            <img src="img/art9.jpg" class="card-img-top" height="300">
+            <div class="card-body text-center">
+              <h6 class="card-title">Sillon</h6>
+              <p class="card-text text-success fw-bold">$12,499.00</p>
+              <button class="btn btn-outline-primary w-100">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+   <div class="row g-4">
+
+        <!-- articulo -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm position-relative">
+
+            <!-- Etiqueta -->
+            <span class="badge bg-danger position-absolute top-0 start-0 m-2">
+              Descuento
+            </span>
+
+            <img src="img/art10.jpg" class="card-img-top" height="300">
+            <div class="card-body text-center">
+              <h6 class="card-title">Silla</h6>
+              <p class="card-text text-success fw-bold">$7,999.00</p>
+              <button class="btn btn-outline-primary w-100">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- COPIA ESTE BLOQUE HASTA COMPLETAR 12 PRODUCTOS -->
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm position-relative">
+            <span class="badge bg-success position-absolute top-0 start-0 m-2">
+              Nuevo
+            </span>
+            <img src="img/art11.jpg" class="card-img-top" height="300">
+            <div class="card-body text-center">
+              <h6 class="card-title">PS5</h6>
+              <p class="card-text text-success fw-bold">$1,299.00</p>
+              <button class="btn btn-outline-primary w-100">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm position-relative">
+            <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-2">
+              Popular
+            </span>
+            <img src="img/art12.jpg" class="card-img-top" height="300">
+            <div class="card-body text-center">
+              <h6 class="card-title">Xbox</h6>
+              <p class="card-text text-success fw-bold">$12,499.00</p>
+              <button class="btn btn-outline-primary w-100">
+                Agregar al carrito
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
++
+      <!-- PAGINACIÓN -->
+      <nav class="mt-5">
+        <ul class="pagination justify-content-center">
+          <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
